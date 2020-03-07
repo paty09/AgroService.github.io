@@ -184,8 +184,8 @@ p {
   text-align: center; }
 
 .slider-content_wrap h5 {
-  color: #909090;
-  font-weight: 400;
+  color: #dbdbdb;
+  font-weight: bold;
   margin: 24px 0; }
 
 @media (max-width: 480px) {
@@ -615,7 +615,7 @@ footer {
     -ms-flex: 100%;
     flex: 100%; } }
 
-/* 
+/*
    BOOKING PAGE
    */
 /* ==============================================================
@@ -960,3 +960,8 @@ footer {
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
+
+.filtros
+{
+  background-color: #fff;
+}
