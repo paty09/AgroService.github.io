@@ -6,13 +6,13 @@ var defaultLayers = platform.createDefaultLayers();
 
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
-  center: {lat:21.09416, lng:-100.56048},
+  center: {lat:21.15824, lng:-100.93362},
   zoom: 11,
   pixelRatio: window.devicePixelRatio || 1
 });
 
 var svgMarker = new  H.map.Icon('./images/tractor.png');
 
-var marker = new H.map.Marker({lat:21.09416, lng:-100.56048}, {icon: svgMarker});
+var marker = new H.map.Marker({lat:21.15824, lng:-100.93362}, {icon: svgMarker});
 
 map.addObject(marker);
