@@ -11,8 +11,8 @@ var map = new H.Map(document.getElementById('map'),
   pixelRatio: window.devicePixelRatio || 1
 });
 
-var svgMarker = new  H.map.Icon('./images/tractor.png');
+var svgMarker = new  H.map.Icon('images/tractor.png');
 
-var marker = new H.map.Marker({lat:210941.3, lng:1005603.8}, {icon: svgMarker});
+var marker = new H.map.Marker({lat:21.09413, lng:100.56038}, {icon: svgMarker});
 
 map.addObject(marker);
