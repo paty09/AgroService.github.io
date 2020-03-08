@@ -11,8 +11,16 @@ var map = new H.Map(document.getElementById('map'),
   pixelRatio: window.devicePixelRatio || 1
 });
 
-var svgMarker = new  H.map.Icon('images/tractor.png');
+var svgMarkup = '<svg width="24" height="24" ' +
+    'xmlns="http://www.w3.org/2000/svg">' +
+    '<rect stroke="white" fill="#1b468d" x="1" y="1" width="22" ' +
+    'height="22" /><text x="12" y="18" font-size="12pt" ' +
+    'font-family="Arial" font-weight="bold" text-anchor="middle" ' +
+    'fill="white">T</text></svg>';
 
-var marker = new H.map.Marker({lat:21.09413, lng:100.56038}, {icon: svgMarker});
+var icon = new H.map.Icon(svgMarkup),
+    coords = {lat: 52.53075, lng: 13.3851},
+    marker = new H.map.Marker(coords, {icon: icon});
 
 map.addObject(marker);
+map.setCenter(coords);
